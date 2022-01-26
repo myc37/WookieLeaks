@@ -11,11 +11,11 @@ datasource db {
 }
 
 model People {
-  id         Int    @id @default(autoincrement())
+  id         Int    @id
   name       String @db.VarChar(255) @unique
   gender     String @db.VarChar(255)
   hairColour String @db.VarChar(255)
-  height     Int   
-  mass       Int   
+  height     String @db.VarChar(255)   
+  mass       String @db.VarChar(255)   
   skinColour String @db.VarChar(255)
 }
