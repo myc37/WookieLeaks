@@ -18,4 +18,8 @@ model People {
   height     String @db.VarChar(255)
   mass       String @db.VarChar(255)
   skinColour String @db.VarChar(255)
+  species    String @db.VarChar(255)
+  eyeColour  String @db.VarChar(255)
+  homeWorld  String @db.VarChar(255)
+  image      String @db.VarChar(255)
 }
