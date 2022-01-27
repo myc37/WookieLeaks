@@ -12,10 +12,10 @@ datasource db {
 
 model People {
   id         Int    @id
-  name       String @db.VarChar(255) @unique
+  name       String @unique @db.VarChar(255)
   gender     String @db.VarChar(255)
   hairColour String @db.VarChar(255)
-  height     String @db.VarChar(255)   
-  mass       String @db.VarChar(255)   
+  height     String @db.VarChar(255)
+  mass       String @db.VarChar(255)
   skinColour String @db.VarChar(255)
 }
