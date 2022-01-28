@@ -8,6 +8,10 @@ export default function Page({ title, children }) {
 			<Head>
 				<title>{title}</title>
 				<link rel="icon" href="/light-saber.png" />
+				<link
+					href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"
+					rel="stylesheet"
+				/>
 			</Head>
 			<main className="h-full min-h-screen flex flex-col">
 				<Navbar />

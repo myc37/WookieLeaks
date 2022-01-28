@@ -23,6 +23,9 @@
 	.col-center {
 		@apply flex flex-col justify-center items-center;
 	}
+	.side-icon {
+		@apply text-gold cursor-pointer text-4xl 2xl:text-6xl;
+	}
 }
 
 @keyframes sf-fly-by-1 {
@@ -141,4 +144,101 @@
 }
 .star-field .layer:nth-child(5) {
 	animation: sf-fly-by-5 15s linear infinite;
+}
+.loader {
+	position: relative;
+	width: 115px;
+	height: 115px;
+}
+.loader span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: rotate(calc(18deg * var(--i)));
+	transition: opacity 3s ease;
+}
+.loader span::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: white;
+	border-radius: 50%;
+	transform: scale(0);
+	animation: animate 2s linear infinite;
+	animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate {
+	0% {
+		transform: scale(0);
+	}
+	10% {
+		transform: scale(1.2);
+	}
+	80% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(0);
+		opacity: 0;
+	}
+}
+.rocket {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	animation: rotating 2s linear infinite;
+	animation-delay: -1s;
+}
+@keyframes rotating {
+	0% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(370deg);
+	}
+}
+.rocket::before {
+	content: "\f135";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	position: absolute;
+	top: 80px;
+	left: 85px;
+	color: white;
+	font-size: 50px;
+	transform: rotate(180deg);
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+}
+.fade-out {
+	animation: fade-out 1s ease-out;
+	animation-delay: 2s;
+}
+@keyframes fade-out {
+	100% {
+		opacity: 0;
+	}
+}
+.fade-in {
+	animation: fade-in 1s ease-in 1;
+}
+.fade-in-long {
+	animation: fade-in 2s ease-in 1;
+}
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
