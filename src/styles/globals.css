@@ -232,7 +232,7 @@
 	animation: fade-in 1s ease-in 1;
 }
 .fade-in-long {
-	animation: fade-in 2s ease-in 1;
+	animation: fade-in 3s ease-in 1;
 }
 @keyframes fade-in {
 	0% {
