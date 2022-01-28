@@ -1,30 +1,29 @@
-import Image from "next/image";
 import { useRouter } from "next/router";
 
 export default function Navbar() {
 	const router = useRouter();
 	return (
-		<div className="w-full border-b border-yellow-500 z-20 py-4 px-12 bg-black">
-			<div className="flex flex-row justify-between items-center">
+		<div className="w-full border-b border-gold z-20 py-6 px-12 bg-black text-4xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl">
+			<div className="flex flex-row justify-center md:justify-between items-center">
 				<div
-					className="w-1/4 lg:w-1/6 xl:w-1/12 cursor-pointer"
+					className="text-gold  cursor-pointer font-display"
 					onClick={() => router.push("/")}
 				>
-					<Image
-						src="/wllogo.png"
-						alt="wl-logo"
-						height={100}
-						width={213}
-						layout="responsive"
-						objectFit="cover"
-						quality={65}
-					/>
+					<p>WookieLeaks</p>
 				</div>
-				<div
-					className="text-bold text-xl md:text-2xl xl:text-4xl cursor-pointer"
-					onClick={() => router.push("/people")}
-				>
-					Database
+				<div className="hidden md:flex md:flex-row">
+					<div
+						className="cursor-pointer font-body border-r-2 border-gold pr-8"
+						onClick={() => router.push("/people")}
+					>
+						Database
+					</div>
+					<div
+						className="cursor-pointer font-body pl-8"
+						onClick={() => router.push("/people")}
+					>
+						quiz
+					</div>
 				</div>
 			</div>
 		</div>
