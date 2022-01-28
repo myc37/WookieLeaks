@@ -1,14 +1,16 @@
-import { useRouter } from "next/router";
 import Page from "../components/Page";
 import Image from "next/image";
 
 export default function Home() {
-	const router = useRouter();
 	return (
 		<Page title="WookieLeaks">
-			<div>Discover the</div>
-			<div>People of</div>
-			<div className="w-1/6">
+			<div className="text-xl md:text-2xl xl:text-3xl text-bold">
+				Discover the
+			</div>
+			<div className="text-xl md:text-2xl xl:text-3xl text-bold">
+				People of
+			</div>
+			<div className="w-1/2 sm:w-1/3 xl:w-1/4 2xl:w-1/6 mt-8">
 				<Image
 					src="/swlogo.png"
 					alt="swlogo"
