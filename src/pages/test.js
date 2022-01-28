@@ -1,10 +1,17 @@
-import prisma from "../../../lib/prisma";
-import Page from "../../components/Page";
-import Select from "../../components/Select";
+import prisma from "../../lib/prisma";
+import Navbar from "../components/Navbar";
+import Select from "../components/Select";
 
-export default function People({ data }) {
+export default function Test({ data }) {
 	return (
-		<Page title="People">
+		<div className="col-center">
+			<Navbar />
+			<div className="star-field col-center">
+				<div className="layer"></div>
+				<div className="layer"></div>
+				<div className="layer"></div>
+			</div>
+
 			<div className="col-center gap-4 p-8 z-10">
 				{data.map((person, index) => {
 					return (
@@ -16,7 +23,7 @@ export default function People({ data }) {
 					);
 				})}
 			</div>
-		</Page>
+		</div>
 	);
 }
 

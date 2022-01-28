@@ -1,16 +1,16 @@
-import Head from "next/head";
-import Background from "../components/Background";
+import { useRouter } from "next/router";
+import Page from "../components/Page";
 
 export default function Home() {
+	const router = useRouter();
 	return (
-		<div>
-			<Head>
-				<link rel="icon" href="/light-saber.png" />
-			</Head>
-			<main className="h-screen col-center">
-				<Background />
-				<p>hi</p>
-			</main>
-		</div>
+		<Page title="WookieLeaks">
+			<button
+				className="text-yellow-400 z-10"
+				onClick={() => router.push("/people")}
+			>
+				People
+			</button>
+		</Page>
 	);
 }

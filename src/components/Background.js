@@ -4,6 +4,8 @@ export default function Background() {
 			<div className="layer"></div>
 			<div className="layer"></div>
 			<div className="layer"></div>
+			<div className="layer"></div>
+			<div className="layer"></div>
 		</div>
 	);
 }
