@@ -13,7 +13,7 @@ export default function Select({ name, path }) {
 	// text and rocket icon are white, change to gold when select component is hovered
 	return (
 		<Link href={path}>
-			<a className="bg-zinc-800 rounded-lg px-8 py-4 cursor-pointer w-[75vw] hover:text-gold flex flex-row justify-between items-center text-2xl">
+			<a className="bg-zinc-800 rounded-lg px-8 py-4 cursor-pointer w-[75vw] hover:text-gold flex flex-row justify-between items-center md:text-2xl">
 				{name}
 				<RocketIcon />
 			</a>

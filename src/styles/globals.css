@@ -27,7 +27,7 @@
 		@apply text-gold cursor-pointer text-4xl 2xl:text-6xl hidden lg:block;
 	}
 	.name-title {
-		@apply text-2xl py-2 px-8 z-10 md:text-4xl bg-gold rounded-full w-fit m-auto text-black font-body;
+		@apply text-xl py-2 px-8 z-10 md:text-4xl bg-gold rounded-full w-fit m-auto text-black font-body;
 	}
 	.body-text {
 		@apply text-2xl md:text-3xl xl:text-4xl 2xl:text-6xl font-body;

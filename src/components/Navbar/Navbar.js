@@ -41,7 +41,7 @@ export default function Navbar() {
 				<li>
 					<Link href="/people">
 						<a className="nav-item md:border-gold md:border-b-0 md:border-r-2 md:pr-8 md:pb-0">
-							Database
+							people
 						</a>
 					</Link>
 				</li>
