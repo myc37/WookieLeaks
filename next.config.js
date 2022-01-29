@@ -10,6 +10,11 @@ module.exports = {
 				destination: "/people/:slug",
 				permanent: true,
 			},
+			{
+				source: "/reset",
+				destination: "/quiz",
+				permanent: true,
+			},
 		];
 	},
 };

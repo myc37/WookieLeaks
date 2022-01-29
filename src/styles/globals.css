@@ -24,7 +24,13 @@
 		@apply flex flex-col justify-center items-center;
 	}
 	.side-icon {
-		@apply text-gold cursor-pointer text-4xl 2xl:text-6xl;
+		@apply text-gold cursor-pointer text-4xl 2xl:text-6xl hidden lg:block;
+	}
+	.name-title {
+		@apply text-2xl py-2 px-8 z-10 md:text-4xl bg-gold rounded-full w-fit m-auto text-black font-body;
+	}
+	.body-text {
+		@apply text-2xl md:text-3xl xl:text-4xl 2xl:text-6xl font-body;
 	}
 }
 
@@ -241,4 +247,19 @@
 	100% {
 		opacity: 1;
 	}
+}
+svg {
+	stroke-dasharray: 20;
+	stroke-dashoffset: 40;
+}
+@keyframes result {
+	0% {
+		stroke-dashoffset: 20;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+.result {
+	animation: result 2s;
 }

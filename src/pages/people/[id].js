@@ -16,9 +16,7 @@ export default function Person({ data }) {
 	return (
 		<Page title={data.name}>
 			<div className="flex flex-col gap-y-24 text-center px-10 w-screen my-12 fade-in">
-				<div className="text-2xl py-2 px-8 z-10 lg:text-4xl bg-gold rounded-full w-fit m-auto text-black font-body">
-					{data.name.toLowerCase()}
-				</div>
+				<div className="name-title">{data.name.toLowerCase()}</div>
 				<div className="col-center gap-y-24 md:gap-x-24 lg:flex-row 2xl:gap-x-48 lg:flex-grow z-10 pb-10 w-full">
 					<button
 						className="side-icon disabled:text-gray-500 disabled:cursor-not-allowed"
@@ -31,7 +29,7 @@ export default function Person({ data }) {
 					>
 						<FontAwesomeIcon icon={faChevronLeft} />
 					</button>
-					<div className="w-full sm:w-2/3 md:w-1/2 lg:w-2/5 2xl:w-1/5 border-2 border-gold rounded-full fade-in-long">
+					<div className="w-full sm:w-2/3 md:w-1/2 lg:w-2/5 xl:w-1/4 2xl:w-1/5 border-2 border-gold rounded-full fade-in-long">
 						<Image
 							src={imgSrc}
 							alt={data.name}
@@ -43,6 +41,7 @@ export default function Person({ data }) {
 								setImgSrc("/fallback.png");
 							}}
 							className="rounded-full border border-gold bg-black"
+							priority
 						/>
 					</div>
 					<div className="grid gap-8 text-lg sm:grid-cols-3 sm:grid-flow-row sm:gap-12 md:gap-24 md:text-xl lg:text-2xl capitalize">
