@@ -35,5 +35,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## References
 
-https://codepen.io/stack-findover/pen/eYWPwPV
-https://www.youtube.com/watch?v=stYvCmQg5cs
+1. https://codepen.io/stack-findover/pen/eYWPwPV
+2. https://www.youtube.com/watch?v=stYvCmQg5cs
