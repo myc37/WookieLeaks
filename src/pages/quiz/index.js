@@ -3,7 +3,13 @@ import Button from "../../components/Controls/Button";
 import getValidIndex from "../../utils/ValidIndex";
 import Image from "next/image";
 
+/**
+ * The page which prompts the user to take the quiz.
+ *
+ * @returns The pre-quiz prompt page.
+ */
 export default function QuizMain() {
+	// generate the index of the person who will be the correct option in the quiz.
 	const random_id = getValidIndex();
 
 	return (

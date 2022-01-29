@@ -1,7 +1,12 @@
 import prisma from "../../../lib/prisma";
 import Page from "../../components/Screens/Page";
 import Select from "../../components/Controls/Select";
-
+/**
+ * Database page consisting of the names of all people in the people collection of swapi.
+ *
+ * @param { Array } data - The list of names of all people in the database fetched from prisma.
+ * @returns The database page.
+ */
 export default function People({ data }) {
 	return (
 		<Page title="People">

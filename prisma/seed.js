@@ -3,12 +3,17 @@ const fetch = require("node-fetch");
 
 const prisma = new PrismaClient();
 
+/**
+ * Function to seed the prisma database with all the information from the people collection of swapi.
+ * Also included some information (such as image) from a akabab's swapi to complement.
+ */
 async function main() {
 	const dataList = [];
 	for (let i = 0; i < 83; i++) {
 		const swapi = await fetch(`https://swapi.dev/api/people/${i + 1}`).then(
 			(res) => res.json()
 		);
+		// invalid results from swapi will have detail attribute
 		if (!swapi.detail) {
 			const akabab = await fetch(
 				`https://akabab.github.io/starwars-api/api/id/${i + 1}.json`
@@ -16,6 +21,7 @@ async function main() {
 
 			console.log(`${i + 1} ${swapi.name}`);
 
+			// combine information from both APIs
 			dataList.push({
 				id: i + 1,
 				name: swapi.name,

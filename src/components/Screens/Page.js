@@ -2,7 +2,16 @@ import Head from "next/head";
 import Background from "./Background";
 import Navbar from "../Navbar/Navbar";
 
+/**
+ * A wrapper for all pages in the website with a standard format.
+ *
+ * @param { string } title
+ * @param { children } children
+ * @returns A wrapper for all pages in the website with a standard format.
+ */
 export default function Page({ title, children }) {
+	// pages will minimally span the entire height of the viewport
+	// children will flex-grow to take up the remaining space below the navigation bar.
 	return (
 		<div>
 			<Head>

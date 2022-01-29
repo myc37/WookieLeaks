@@ -9,10 +9,19 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
 
+/**
+ * Profile page displaying the image, name as well as several other details about a person.
+ *
+ * @param { Object } data - The information about the person fetched from prisma.
+ * @returns The profile page of a person.
+ */
 export default function Person({ data }) {
 	const router = useRouter();
+	// some image links for the api are faulty, so a fallback image is prepared
 	const [imgSrc, setImgSrc] = useState(data.image);
 
+	// for bigger screen sizes (>1024px), there will be side icons to navigate to the previous or next person
+	// since index 17 is invalid, these side icons will skip index 17
 	return (
 		<Page title={data.name}>
 			<div className="flex flex-col gap-y-24 text-center px-10 w-screen my-12 fade-in">
@@ -21,7 +30,7 @@ export default function Person({ data }) {
 					<button
 						className="side-icon disabled:text-gray-500 disabled:cursor-not-allowed"
 						onClick={() =>
-							data.id === 17
+							data.id === 18
 								? router.push(`/refresh/${data.id - 2}`)
 								: router.push(`/refresh/${data.id - 1}`)
 						}
@@ -81,7 +90,7 @@ export default function Person({ data }) {
 					<button
 						className="side-icon disabled:text-gray-500 disabled:cursor-not-allowed"
 						onClick={() =>
-							data.id === 15
+							data.id === 16
 								? router.push(`/refresh/${data.id + 2}`)
 								: router.push(`/refresh/${data.id + 1}`)
 						}

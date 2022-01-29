@@ -1,5 +1,13 @@
 import Head from "next/head";
+
+/**
+ * A loading screen with a flying rocket animation.
+ *
+ * @returns  A loading screen with a flying rocket animation.
+ */
 export default function LoadingScreen() {
+	// loading screen will load for 3s
+	// loading screen will fade out, then the home page will fade in
 	return (
 		<div>
 			<Head>
