@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import RocketIcon from "../components/RocketIcon";
+import RocketIcon from "../Other/RocketIcon";
 
 export default function Button({ text, path }) {
 	const router = useRouter();

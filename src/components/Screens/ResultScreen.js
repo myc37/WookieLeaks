@@ -1,7 +1,10 @@
 import Page from "./Page";
-import Button from "./Button";
+import Button from "../Controls/Button";
+import getValidIndex from "../../utils/ValidIndex";
 
 export default function ResultScreen({ correct }) {
+	const random_id = getValidIndex();
+
 	return (
 		<Page>
 			<div className="col-center gap-y-8">
@@ -43,7 +46,7 @@ export default function ResultScreen({ correct }) {
 					</>
 				)}
 			</div>
-			<Button text="next question" path="/reset" />
+			<Button text="next question" path={`/reset/${random_id}`} />
 		</Page>
 	);
 }

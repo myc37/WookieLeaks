@@ -1,8 +1,8 @@
-import Page from "../components/Page";
+import Page from "../components/Screens/Page";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import LoadingScreen from "../components/LoadingScreen";
-import Button from "../components/Button";
+import LoadingScreen from "../components/Screens/LoadingScreen";
+import Button from "../components/Controls/Button";
 
 export default function Home() {
 	const [loading, setLoading] = useState(true);

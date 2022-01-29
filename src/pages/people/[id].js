@@ -1,7 +1,7 @@
 import prisma from "../../../lib/prisma";
 import Image from "next/image";
-import Page from "../../components/Page";
-import { useEffect, useState } from "react";
+import Page from "../../components/Screens/Page";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faChevronLeft,
@@ -104,7 +104,6 @@ export async function getStaticProps({ params }) {
 	return { props: { data } };
 }
 
-//TODO: change id_list to fetch id from database
 export async function getStaticPaths() {
 	const people = await prisma.people.findMany({
 		select: {

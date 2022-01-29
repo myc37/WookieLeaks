@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Background from "../components/Background";
-import Navbar from "../components/Navbar";
+import Background from "./Background";
+import Navbar from "../Navbar/Navbar";
 
 export default function Page({ title, children }) {
 	return (

@@ -1,4 +1,4 @@
-import RocketIcon from "./RocketIcon";
+import RocketIcon from "../Other/RocketIcon";
 import Link from "next/link";
 
 export default function Select({ name, path }) {

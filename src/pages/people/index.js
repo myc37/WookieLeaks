@@ -1,6 +1,6 @@
 import prisma from "../../../lib/prisma";
-import Page from "../../components/Page";
-import Select from "../../components/Select";
+import Page from "../../components/Screens/Page";
+import Select from "../../components/Controls/Select";
 
 export default function People({ data }) {
 	return (

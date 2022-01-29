@@ -11,8 +11,8 @@ module.exports = {
 				permanent: true,
 			},
 			{
-				source: "/reset",
-				destination: "/quiz",
+				source: "/reset/:slug",
+				destination: "/quiz/:slug",
 				permanent: true,
 			},
 		];
