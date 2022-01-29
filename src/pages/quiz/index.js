@@ -27,7 +27,7 @@ export default function QuizMain() {
 					priority
 				/>
 			</div>
-			<Button text="take the quiz!" path={`/quiz/${random_id}`} />
+			<Button text="start" path={`/quiz/${random_id}`} />
 		</Page>
 	);
 }

@@ -53,7 +53,7 @@ export default function ResultScreen({ correct }) {
 					</>
 				)}
 			</div>
-			<Button text="next question" path={`/reset/${random_id}`} />
+			<Button text="next" path={`/reset/${random_id}`} />
 		</Page>
 	);
 }
