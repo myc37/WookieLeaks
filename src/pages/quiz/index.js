@@ -18,7 +18,7 @@ export default function QuizMain() {
 			<div className="body-text">name everyone in</div>
 			<div className="w-3/5 sm:w-2/5 lg:w-1/3 2xl:w-1/4 mt-8 fade-in-long">
 				<Image
-					src="/swlogo.png"
+					src="/icons/swlogo.png"
 					alt="swlogo"
 					height={1}
 					width={2}

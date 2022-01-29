@@ -15,7 +15,7 @@ export default function Button({ text, path }) {
 	// rocket icon only appears when button is hovered.
 	return (
 		<div
-			className="z-10 hover:bg-gold rounded-full w-fit py-4 px-8 font-body text-3xl md:text-4xl xl:text-5xl 2xl:text-7xl text-gold hover:text-black hover:flex hover:flex-row hover:gap-x-12 cursor-pointer mt-16 group animate-pulse hover:animate-none"
+			className="z-10 hover:bg-gold rounded-full w-fit py-4 px-8 font-body text-4xl md:text-4xl xl:text-5xl 2xl:text-7xl text-gold hover:text-black hover:flex hover:flex-row hover:gap-x-12 cursor-pointer mt-16 group animate-pulse hover:animate-none"
 			onClick={() => router.push(path)}
 		>
 			<p>{text}</p>

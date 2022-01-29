@@ -38,7 +38,7 @@ export default function ResultScreen({ correct }) {
 						<p className="body-text">good try!</p>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							className="stroke-red-600 h-3/4 w-3/4 result"
+							className="stroke-red-600 h-3/4 w-3/4 result -rotate-90"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke="currentColor"

@@ -16,7 +16,7 @@ export default function Page({ title, children }) {
 		<div>
 			<Head>
 				<title>{title}</title>
-				<link rel="icon" href="/light-saber.png" />
+				<link rel="icon" href="/icons/light-saber.png" />
 				<link
 					href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"
 					rel="stylesheet"

@@ -47,7 +47,7 @@ export default function Person({ data }) {
 							quality={65}
 							layout="responsive"
 							onError={() => {
-								setImgSrc("/fallback.png");
+								setImgSrc("/images/fallback.png");
 							}}
 							className="rounded-full border border-gold bg-black"
 							priority
