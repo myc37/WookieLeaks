@@ -23,7 +23,7 @@ export default function Navbar() {
 			<div className="flex flex-row justify-between items-center">
 				<Link href="/">
 					<a className="text-gold cursor-pointer font-display">
-						WookieLeaks
+						wookieleaks
 					</a>
 				</Link>
 				<div

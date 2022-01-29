@@ -22,7 +22,7 @@ export default function Quiz({ data, options }) {
 		return (
 			<Page>
 				<div className="flex flex-col gap-y-24 text-center px-10 w-screen my-12 fade-in">
-					<div className="body-text">Who is this person?</div>
+					<div className="body-text">who is this person?</div>
 					<div className="col-center gap-y-24 md:gap-x-24 lg:flex-row 2xl:gap-x-48 lg:flex-grow z-10 pb-10 w-full">
 						<div className="w-full sm:w-2/3 md:w-1/2 lg:w-2/5 xl:w-1/4 2xl:w-1/5 border-2 border-gold rounded-full fade-in-long">
 							<Image
